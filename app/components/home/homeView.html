@@ -12,7 +12,7 @@
 					<md-list-item ng-repeat="person in people" class="noright">
 						<img alt="{{ person.name }}" ng-src="http://www.fancyicons.com/free-icons/103/pretty-office-4/png/256/man_256.png" class="md-avatar" />
 						<p>{{ person.name }}</p>
-						<md-icon ng-click="modifierEmploye(person.id)" aria-label="Send Email" class="md-secondary md-hue-3 glyphicon glyphicon-pencil" ></md-icon>
+						<md-icon ng-click="modifierEmploye($index)" aria-label="Send Email" class="md-secondary md-hue-3 glyphicon glyphicon-pencil" ></md-icon>
 						<md-icon class="md-secondary glyphicon glyphicon-trash" ng-click="doSecondaryAction($event)" aria-label="Chat" md-svg-icon="communication:message"></md-icon>
 					</md-list-item>
 				</md-list>

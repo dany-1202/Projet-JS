@@ -29,7 +29,7 @@ ctrlApp.config(['$routeProvider', function($routeProvider) { // $routeProvider e
             controller: 'addEmployeController' // Contrôleur de la page test
         })
         .when('/modEmploye', { // Chemin de addEmploye
-            templateUrl: 'app/components/addEmploye/modifierEmployeView.html',
+            templateUrl: 'app/components/modifierEmploye/modifierEmployeView.html',
             controller: 'modifierEmployeController' // Contrôleur de la page test
         })
         .otherwise({

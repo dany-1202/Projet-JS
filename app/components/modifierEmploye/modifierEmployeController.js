@@ -1,7 +1,6 @@
 var ctrlApp = angular.module('ctrlApp2');
 
-ctrlApp.controller('modifierEmployeController', function($scope, $http, $location) {
-  //$scope.lancerConfig = function () {
-    $location.url("/modEmploye");
-  //}
+ctrlApp.controller('modifierEmployeController', function($scope,$rootScope, $http, $location) {
+  var obj = $rootScope.EmpCourrant;
+  console.log(obj);
 });
