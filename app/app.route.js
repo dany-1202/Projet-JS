@@ -6,7 +6,7 @@
  * var xxx = angular.module('ctrlApp'); Ainsi je récupère les dépendances de ctrlApp.
 **/
 /* On déclare ici toutes les dépendances */
-var ctrlApp = angular.module('ctrlApp2', ['ngRoute', 'ngMaterial']);
+var ctrlApp = angular.module('ctrlApp2', ['ngRoute', 'ngMaterial', 'ng-fusioncharts']);
 /**
  * Configuration du module principal : ctrlApp
  * La configuration des routes de l'applications est faites dans la procédures suivante.
