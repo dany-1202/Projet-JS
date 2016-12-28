@@ -7,28 +7,33 @@
                 <h3>Modifier un employé</h3>
             </div>
             <div class="row">
-                  <div class="col-lg-1">Nom & Prénom : </div>
-                  <div class="col-lg-2"><input type="text" value="{{$rootScope.EmpCourrant.name}}" autofocus></input></div>
+                  <div class="col-lg-1">Prenom:  </div>
+                  <div class="col-lg-2"><input type="text" value="{{prenom}}" id="inputPrenom" autofocus></input></div>
+                  <div class="col-lg-1"><span></span></div>
+            </div>
+            <div class="row">
+                  <div class="col-lg-1">Nom: </div>
+                  <div class="col-lg-2"><input type="text" value="{{nom}}" id="inputNom" ></input></div>
                   <div class="col-lg-1"><span></span></div>
             </div>
             <div class="row">
                   <div class="col-lg-1">Salaire : </div>
-                  <div class="col-lg-2"><input type="text" ></input></div>
+                  <div class="col-lg-2"><input type="text" value="{{salaire}}" id="inputSalaire" ></input></div>
                   <div class="col-lg-1"><span></span></div>
             </div>
             <div class="row">
                   <div class="col-lg-1">Nombre d'heures : </div>
-                  <div class="col-lg-2"><input type="text" ></input></div>
+                  <div class="col-lg-2"><input type="text" value="{{nbHeure}}" id="inputNbHeure" ></input></div>
                   <div class="col-lg-1"><span></span></div>
             </div>
             <div class="row">
                   <div class="col-lg-1">Age : </div>
-                  <div class="col-lg-2"><input type="text" ></input></div>
+                  <div class="col-lg-2"><input type="text" value="{{age}}" id="inputAge"></input></div>
                   <div class="col-lg-1"><span></span></div>
             </div>
             <div class="row">
               <div class="col-lg-12">
-                <md-button ng-click="" class="bouton" style="background-color:Brown; color:white">Modifier</md-button>
+                <md-button ng-click="updatePersonne()" class="bouton" style="background-color:Brown; color:white">Modifier</md-button>
               </div>
             </div>
         </div>
