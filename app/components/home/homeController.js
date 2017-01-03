@@ -24,18 +24,15 @@ ctrlApp.controller('homeController', function($scope, $rootScope, $http, $locati
   };
 
   $scope.deletePersonne = function (index) {
+
     $rootScope.EmpCourrant = angular.copy($scope.people[index]);
     var dataPersonne = {'id': $rootScope.EmpCourrant.idEmp};
 
     var $res = $http.post("assets/php/deletePersonne.php", dataPersonne);
     $res.then(function (message) {});
 
-    //Comment supprimer une seule ligne du DOM ? sans réafficher toute la liste ...
-    /*
-        A compléter
-    */
-
-
-  }
+    //supprime une seule ligne
+    $scope.people.splice(index,1);
+  };
 
 });
