@@ -1,6 +1,7 @@
 var ctrlApp = angular.module('ctrlApp2');
 
 ctrlApp.controller('modifierEmployeController', function($scope,$rootScope, $http, $location) {
+  
   var obj = $rootScope.EmpCourrant;
 
   console.log(obj);
@@ -15,6 +16,8 @@ ctrlApp.controller('modifierEmployeController', function($scope,$rootScope, $htt
   //mise à jour des champ après le click sur le bouton modifier
   $scope.updatePersonne = function () {
   	
+    $scope.messageValide = "Informations de l'employé enregistrées";
+
   	var dataPersonne = {
 				        'id': $scope.idEmp,
                 'prenom': document.getElementById("inputPrenom").value,
@@ -26,6 +29,7 @@ ctrlApp.controller('modifierEmployeController', function($scope,$rootScope, $htt
     var $res = $http.post("assets/php/updatePersonne.php", dataPersonne);
     $res.then(function (message) {});
 
+    //$location.url("/home");
   }
 
 });
